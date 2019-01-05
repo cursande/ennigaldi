@@ -13,10 +13,10 @@ class ArticleTile extends React.Component<Props, object> {
     const { title, authors, types, content_summary } = this.props;
 
     return (
-      <div className="article">
-        <h3 className="articleHeading">{title}</h3>
-        <h5 className="articleSubHeading">{authors}</h5>
-        <h5 className="articleSubHeading">{types}</h5>
+      <div className="articleTile">
+        <h3 className="articleTileHeading">{title}</h3>
+        <h5 className="articleTileSubHeading">{authors}</h5>
+        <h5 className="articleTileSubHeading">{types}</h5>
         <p>{content_summary}</p>
       </div>
     );
