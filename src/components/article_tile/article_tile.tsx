@@ -1,23 +1,24 @@
 import * as React from 'react';
 
 export interface Props {
+  external_id: string;
   title: string;
-  content_summary: string;
+  contentSummary?: string;
   types: string;
   authors: string;
   // image: Image
 }
 
-class ArticleTile extends React.Component<Props, object> {
+export default class ArticleTile extends React.Component<Props, object> {
   render() {
-    const { title, authors, types, content_summary } = this.props;
+    const { external_id, title, authors, types, contentSummary } = this.props;
 
     return (
       <div className="articleTile">
         <h3 className="articleTileHeading">{title}</h3>
         <h5 className="articleTileSubHeading">{authors}</h5>
         <h5 className="articleTileSubHeading">{types}</h5>
-        <p>{content_summary}</p>
+        <p>{contentSummary}</p>
       </div>
     );
   }
