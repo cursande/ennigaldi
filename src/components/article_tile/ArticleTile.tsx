@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 export interface Props {
-  external_id: string;
   title: string;
   contentSummary?: string;
   types: string;
@@ -9,9 +8,9 @@ export interface Props {
   // image: Image
 }
 
-export default class ArticleTile extends React.Component<Props, object> {
+class ArticleTile extends React.Component<Props, object> {
   render() {
-    const { external_id, title, authors, types, contentSummary } = this.props;
+    const { title, authors, types, contentSummary } = this.props;
 
     return (
       <div className="articleTile">
@@ -23,3 +22,5 @@ export default class ArticleTile extends React.Component<Props, object> {
     );
   }
 }
+
+export default  ArticleTile;
