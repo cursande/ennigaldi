@@ -5,6 +5,8 @@ body, html {
   background: linear-gradient(to top, #26c6da, #1FA2FF)
 }
 
-.App {
-  text-align: center;
+.App .main {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Image from '../image/Image';
+import './ArticleTile.css';
 
 interface Props {
   title: string;
@@ -14,15 +15,15 @@ class ArticleTile extends React.Component<Props, object> {
     const { title, authors, types, contentSummary, image } = this.props;
 
     return (
-      <div className="articleTile">
-        <h3 className="articleTileHeading">{title}</h3>
-        <Image url={image.url} />
-        <h5 className="articleTileSubHeading">{authors}</h5>
-        <h5 className="articleTileSubHeading">{types}</h5>
+      <div className="ArticleTile card">
+        <h3 className="ArticleTileHeading title">{title}</h3>
+        {!!image && <Image url={image.url} alt={image.alt} height={image.height} width={image.width} />}
+        <h5 className="ArticleTileSubHeading">{authors}</h5>
+        <h5 className="ArticleTileSubHeading">{types}</h5>
         <p>{contentSummary}</p>
       </div>
     );
   }
 }
 
-export default  ArticleTile;
+export default ArticleTile;

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import ArticleTile from './components/article_tile/ArticleTile';
+import 'bulma/css/bulma.css'
 
 const sampleArticle = {
   external_id: 1,
