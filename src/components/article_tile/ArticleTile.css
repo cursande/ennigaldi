@@ -1,3 +1,16 @@
 .ArticleTile {
   padding: 1rem;
 }
+
+.ArticleTileImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.ArticleTileImg img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}

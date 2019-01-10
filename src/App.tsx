@@ -3,12 +3,15 @@ import './App.css';
 import ArticleTile from './components/article_tile/ArticleTile';
 import 'bulma/css/bulma.css'
 
+import sampleImage from './components/image/sample-image.jpg'
+
 const sampleArticle = {
   external_id: 1,
   title: 'Foo-silli',
   contentSummary: 'This is a sample article',
   types: 'Adventure, erotica',
-  authors: 'Bar-bara Streisand'
+  authors: 'Bar-bara Streisand',
+  image: { src: sampleImage }
 };
 
 class App extends React.Component {
@@ -32,6 +35,7 @@ class App extends React.Component {
                   contentSummary={article.contentSummary}
                   types={article.types}
                   authors={article.authors}
+                  image={article.image}
                 />
               );
             })}
