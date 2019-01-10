@@ -14,12 +14,17 @@ class ArticleTile extends React.Component<Props, object> {
   render() {
     const { title, authors, types, contentSummary, image } = this.props;
 
+    const articleTileImgHeight = '70px'
+    const articleTileImgWidth = '70px'
+
     return (
       <div className="ArticleTile card">
-        <h3 className="ArticleTileHeading title">{title}</h3>
-        {!!image && <Image url={image.url} alt={image.alt} height={image.height} width={image.width} />}
-        <h5 className="ArticleTileSubHeading">{authors}</h5>
-        <h5 className="ArticleTileSubHeading">{types}</h5>
+        <h3 className="ArticleTile--heading title">{title}</h3>
+        <div className='ArticleTileImg card-image'>
+          {!!image && <Image src={image.src} alt={image.alt} height={articleTileImgHeight} width={articleTileImgWidth} />}
+        </div>
+        <h5 className="ArticleTile--sub-heading">{authors}</h5>
+        <h5 className="ArticleTile--sub-heading">{types}</h5>
         <p>{contentSummary}</p>
       </div>
     );
