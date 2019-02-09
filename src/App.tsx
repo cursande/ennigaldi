@@ -1,12 +1,12 @@
 import * as React from 'react';
 import './App.css';
-import ArticleTile from './components/article_tile/ArticleTile';
+import ArticleTile from './components/ArticleTile/ArticleTile';
 import 'bulma/css/bulma.css'
 
 import sampleImage from './components/image/sample-image.jpg'
 
 const sampleArticle = {
-  external_id: 1,
+  externalId: 1,
   title: 'Foo-silli',
   contentSummary: 'This is a sample article',
   types: 'Adventure, erotica',
@@ -30,7 +30,7 @@ class App extends React.Component {
             articles.map(article => {
               return (
                 <ArticleTile
-                  key={article.external_id}
+                  key={article.externalId}
                   title={article.title}
                   contentSummary={article.contentSummary}
                   types={article.types}
