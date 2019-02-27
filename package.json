@@ -10,6 +10,7 @@
     "graphql": "^14.0.2",
     "graphql-tag": "^2.10.0",
     "react": "^16.7.0",
+    "react-apollo": "^2.5.0",
     "react-dom": "^16.7.0",
     "react-scripts-ts": "^4.0.8"
   },
