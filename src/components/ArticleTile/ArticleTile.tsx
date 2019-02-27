@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Image from '../image/Image';
+import Image from '../Image/Image';
 import './ArticleTile.css';
 
 interface Props {
