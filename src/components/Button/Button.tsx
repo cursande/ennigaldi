@@ -9,7 +9,7 @@ interface Props {
   size?: string;
   styles?: string;
   states?: string;
-  onClick: (data: any) => void;
+  onClick: () => void;
 }
 
 class Button extends React.Component<Props, object> {
